@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and open-ended feedback
+    url: https://github.com/rimedag/wavebreak/discussions
+    about: Use Discussions for help, ideas and Stillpoint conversations.
+  - name: Security vulnerabilities
+    url: https://github.com/rimedag/wavebreak/security/policy
+    about: Read the private reporting instructions. Do not disclose vulnerabilities publicly.

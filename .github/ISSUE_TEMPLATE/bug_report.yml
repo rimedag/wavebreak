@@ -1,0 +1,74 @@
+{
+  "name": "Bug report",
+  "description": "Help reproduce a problem in Wavebreak.",
+  "title": "[Bug]: ",
+  "body": [
+    {
+      "type": "markdown",
+      "attributes": {
+        "value": "This is public. Never include passwords, cookies, browsing history, private notes or sensitive URLs. Report security vulnerabilities privately using SECURITY.md."
+      }
+    },
+    {
+      "type": "input",
+      "id": "version",
+      "attributes": {
+        "label": "Wavebreak version"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "input",
+      "id": "os",
+      "attributes": {
+        "label": "Operating system and version"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "steps",
+      "attributes": {
+        "label": "Steps to reproduce"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "expected",
+      "attributes": {
+        "label": "Expected result"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "actual",
+      "attributes": {
+        "label": "Actual result"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "screenshots",
+      "attributes": {
+        "label": "Screenshots",
+        "description": "Optional. Remove personal data before attaching images."
+      },
+      "validations": {
+        "required": false
+      }
+    }
+  ]
+}
