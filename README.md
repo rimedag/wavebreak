@@ -59,10 +59,11 @@ Only download Wavebreak from an official release. The repository ZIP is document
 
 | Platform | Status |
 | --- | --- |
-| Windows x64 | Alpha build prepared and tested locally. |
+| Windows x64 | Public alpha available. |
 | macOS | Planned; no public build yet. |
 | Linux | Planned; no public build yet. |
-| iPadOS / iOS | Future product direction. |
+| Android | Planned; future mobile build. |
+| iPadOS / iOS | Planned; future mobile build. |
 
 ## Roadmap
 
@@ -79,4 +80,3 @@ Do not post passwords, cookies, browsing history, private notes, private URLs or
 Wavebreak is free proprietary software. You may download and use official released application builds under the included terms. The source code is private and no open-source license is granted.
 
 See [LICENSE.md](LICENSE.md) and [EULA.md](EULA.md).
-

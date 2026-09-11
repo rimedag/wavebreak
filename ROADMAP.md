@@ -42,8 +42,9 @@ These are future workspace directions, not alpha.6 features.
 
 - macOS build and validation.
 - Linux build and validation.
+- Android future mobile build work.
+- iPadOS / iOS future mobile build work.
 - Windows code signing.
 - Update and distribution improvements.
 
-No macOS, Linux or mobile release is available today.
-
+No macOS, Linux, Android, iPadOS or iOS release is available today.
