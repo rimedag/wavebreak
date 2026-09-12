@@ -10,7 +10,7 @@ Wavebreak is a desktop browser and local workspace being developed in public fro
 
 ## Public Alpha
 
-Current target: **0.1.0-alpha.6**.
+The current published alpha is **0.1.0-alpha.6**. See the [changelog](CHANGELOG.md) for what shipped in it and its known alpha limits.
 
 Wavebreak is currently distributed as an unsigned Windows x64 alpha. Windows may show a SmartScreen warning. The source code is proprietary and is not published in this repository.
 
@@ -32,11 +32,35 @@ Wavebreak is currently distributed as an unsigned Windows x64 alpha. Windows may
 
 ![Wavebreak ASCII mode](screenshots/wavebreak-ascii.png)
 
+## See Wavebreak in action
+
+Short silent screen recordings of `0.1.0-alpha.6` running on real pages.
+
+### Dynamic Modes
+
+Switching FULL, CLEAR, ASCII and DEEP on a long Wikipedia article, with no reload between modes.
+
+https://github.com/user-attachments/assets/1bb9f606-0c96-4bf3-a3ad-b05cd0911e5a
+
+### Dynamic Modes on a richer page
+
+The same four modes on an image-heavy NASA Science page. ASCII converts eligible images and keeps their alt text; DEEP simplifies the layout and masks secondary media. CLEAR is deliberately subtle on pages that are already clean.
+
+https://github.com/user-attachments/assets/01a65f66-df47-4fe6-9388-d0336e9c8f72
+
 ## Stillpoint
 
 Stillpoint is the direction for Wavebreak's integrated thinking and note-taking environment. The current alpha includes an optional Daily workspace and shared Markdown editing. Deeper Stillpoint integration, a standalone experience and richer workflows are future alpha work.
 
+Read more about [Stillpoint](docs/stillpoint.md) and what exists today.
+
 ![Wavebreak Daily workspace](screenshots/wavebreak-daily-workspace.png)
+
+### Daily workspace
+
+Opening Daily in a new tab, writing a short note and saving it locally, then returning to browsing.
+
+https://github.com/user-attachments/assets/3b5d21b0-bd41-4bf1-a425-ad99ef756bbe
 
 ## Privacy
 
@@ -46,14 +70,14 @@ Read the [privacy notice](PRIVACY.md).
 
 ## Downloads
 
-Official public builds will be attached to [GitHub Releases](https://github.com/rimedag/wavebreak/releases).
+**[Download Wavebreak 0.1.0-alpha.6](https://github.com/rimedag/wavebreak/releases/tag/0.1.0-alpha.6)** — Windows x64:
 
-For `0.1.0-alpha.6`, the intended Windows release assets are:
+- `Wavebreak-Setup-0.1.0-alpha.6-x64.exe` — installer (111 MB)
+- `Wavebreak-Portable-0.1.0-alpha.6-x64.exe` — portable, runs without installation (111 MB)
 
-- `Wavebreak-Portable-0.1.0-alpha.6-x64.exe`
-- `Wavebreak-Setup-0.1.0-alpha.6-x64.exe`
+Verify your download against `SHA256SUMS.txt`, attached to the same release. These builds are unsigned, so Windows may show a SmartScreen warning on first run. Do not disable OS security protections in response to a warning.
 
-Only download Wavebreak from an official release. The repository ZIP is documentation, not the application.
+Later builds are attached to [GitHub Releases](https://github.com/rimedag/wavebreak/releases) as they ship. Only download Wavebreak from an official release. The repository ZIP is documentation, not the application.
 
 ## Platforms
 

@@ -1,6 +1,6 @@
 # Getting started
 
-The first public binary release is pending. When available, download only from [official Releases](https://github.com/rimedag/wavebreak/releases), read that release's known issues and EULA, and choose the package matching your OS and architecture.
+The current public release is `0.1.0-alpha.6` for Windows x64. Download only from [official Releases](https://github.com/rimedag/wavebreak/releases), read that release's known issues and EULA, and choose the package matching your OS and architecture.
 
 For Windows, the installer sets up the application; the portable launcher runs without installation. Both use the normal local application-data location for settings. Initial alpha packages are unsigned. Do not disable OS security protections in response to a warning.
 
