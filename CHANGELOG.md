@@ -1,6 +1,22 @@
 # Changelog
 
-Public releases should continue in order: `alpha.7`, `alpha.8`, `alpha.9` and onward.
+## 0.1.0-alpha.8 — 2026-09-13
+
+- Fix background-tab mute without activation; add an independent monochrome all-window master mute.
+- Add separate Daily Markdown folder selection and a real Stillpoint folder tree.
+- Keep exactly one live Stillpoint editor, embedded or detached. Its anchor offers Summon Stillpoint; summoning or closing the floating shell reattaches the editor and preserves live workspace state. Unsafe drafts prevent detaching.
+- Repair tab grouping and reopen order. Tabs compress to a 56px minimum; the standard window fits 18 instead of 6 before overflow. A compact anchored dropdown lists overflow tabs without replacing the page and closes on Escape, outside click or selection.
+- Add persistent None (default), Initial and Site icon tab markers.
+- Keep Balanced as the Memory Saver default; add Manual, which alone displays Sleep controls and disables automatic sleeping. Off, Balanced and Aggressive hide manual controls.
+- Make Private windows darker and add a persistent default browsing mode while retaining explicit Normal windows.
+- Add About information and improve first-profile filter initialization before browsing, retaining cached/fallback protection and honest ad-blocking limits.
+- Keep the existing production profile path and prepare a one-time rollback copy before alpha.8 uses an existing profile.
+
+Validation: typecheck, lint, 57 unit tests, 44 functional tests, production build, packaged runtime and Portable smoke checks passed. Repeated live YouTube ASCII → DEEP → ASCII cycles restored comments and secondary content without reloading; the historical alpha.6 report was not reproduced. Short playback tests do not prove universal ad blocking.
+
+Known limits: unsigned Windows x64 alpha; no automatic updates; installed production-profile acceptance is still a user verification step. Live drafts are not crash recovery. Complex sites may need FULL/original view. ASCII/DEEP still use the live renderer; computational savings are not claimed. No guaranteed suppression of every YouTube pre-roll, mid-roll or server-inserted ad. External Markdown files need independent backups.
+
+Close every Wavebreak process before upgrading. Portable and Setup share the normal profile. The one-time rollback snapshot is at `%APPDATA%\Wavebreak.rollback-before-alpha8\profile`; retain it and the previous executable until satisfied. External Markdown files are not rolled back with the browser profile.
 
 ## 0.1.0-alpha.7
 
