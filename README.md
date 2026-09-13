@@ -10,7 +10,7 @@ Wavebreak is a desktop browser and local workspace being developed in public fro
 
 ## Public Alpha
 
-The current published alpha is **0.1.0-alpha.6**. See the [changelog](CHANGELOG.md) for what shipped in it and its known alpha limits.
+The current published alpha is **0.1.0-alpha.7**. See the [changelog](CHANGELOG.md) for what shipped in it and its known alpha limits.
 
 Wavebreak is currently distributed as an unsigned Windows x64 alpha. Windows may show a SmartScreen warning. The source code is proprietary and is not published in this repository.
 
@@ -18,6 +18,7 @@ Wavebreak is currently distributed as an unsigned Windows x64 alpha. Windows may
 
 - Secure Electron browsing shell with isolated website views and local browser chrome.
 - Tabs, tab groups, bookmarks, history, downloads, find, zoom, mute, print and fullscreen basics.
+- Memory Saver with **Off**, **Balanced** and **Aggressive** modes. Balanced is the default.
 - Four Dynamic Modes:
   - **1 FULL**: regular page rendering with protection enabled.
   - **2 CLEAR**: lighter distraction filtering.
@@ -30,11 +31,15 @@ Wavebreak is currently distributed as an unsigned Windows x64 alpha. Windows may
 - 24 dark color palettes with phthalo green as the default.
 - Optional Daily workspace and shared Markdown folder editing for local `.md` files.
 
+Memory Saver lets eligible inactive tabs sleep automatically and restores them when selected. Scroll position is restored approximately. Active tabs, audible/media tabs, active-download tabs, internal/non-HTTP(S) views and tabs with detected editable user input are protected from automatic sleep. Manual Sleep remains available for inactive tabs.
+
+Internal validation example: in one 10-tab same-session validation, Balanced Memory Saver reduced total Wavebreak process-tree RAM from ~3.2 GB to ~1.5 GB by sleeping eligible inactive tabs. Results vary with websites and session state.
+
 ![Wavebreak ASCII mode](screenshots/wavebreak-ascii.png)
 
 ## See Wavebreak in action
 
-Short silent screen recordings of `0.1.0-alpha.6` running on real pages.
+Short silent screen recordings from the public alpha line running on real pages. Current videos were recorded with `0.1.0-alpha.6`; alpha.7 keeps those Dynamic Mode behaviors and adds Memory Saver.
 
 ### Dynamic Modes
 
@@ -70,10 +75,10 @@ Read the [privacy notice](PRIVACY.md).
 
 ## Downloads
 
-**[Download Wavebreak 0.1.0-alpha.6](https://github.com/rimedag/wavebreak/releases/tag/0.1.0-alpha.6)** — Windows x64:
+**[Download Wavebreak 0.1.0-alpha.7](https://github.com/rimedag/wavebreak/releases/tag/0.1.0-alpha.7)** — Windows x64:
 
-- `Wavebreak-Setup-0.1.0-alpha.6-x64.exe` — installer (111 MB)
-- `Wavebreak-Portable-0.1.0-alpha.6-x64.exe` — portable, runs without installation (111 MB)
+- `Wavebreak-Setup-0.1.0-alpha.7-x64.exe` — installer (111 MiB)
+- `Wavebreak-Portable-0.1.0-alpha.7-x64.exe` — portable, runs without installation (111 MiB)
 
 Verify your download against `SHA256SUMS.txt`, attached to the same release. These builds are unsigned, so Windows may show a SmartScreen warning on first run. Do not disable OS security protections in response to a warning.
 
