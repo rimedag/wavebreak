@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.2.0-beta.1 — 2026-10-31
+
+First beta and first macOS build (universal, Developer ID signed, notarized). Windows x64 builds are included, unsigned.
+
+- macOS application menu and shortcuts (Cmd+C/V/X/A, Cmd+L, Cmd+T, Cmd+[ / Cmd+]); Option+1–4 for Dynamic Mode inside text fields.
+- Per-site permission prompts for camera, microphone, location, notifications and clipboard reading, remembered in normal windows and discarded with Private windows. Fullscreen video, copy buttons and pointer lock work.
+- Sign-in popups (OAuth, payment) open in a guarded window titled with the real site address.
+- ASCII mode converts cross-origin images when the server allows it.
+- Less idle work for media discovery and scrolling.
+- Electron fuses (no RunAsNode/NODE_OPTIONS/inspector, cookie encryption, asar integrity) and a zod security update.
+
+Known issues: CLEAR looks close to FULL on many pages; some ASCII images show a placeholder; the toolbar stays visible in YouTube fullscreen; Private tab titles can stay "New tab"; the + button sits at the far right of the tab strip; Stillpoint is only in the ≡ menu; Google/GitHub sign-in popups not yet verified end to end. The Windows build was cross-built and not yet confirmed on Windows; back up `%APPDATA%\Wavebreak` before upgrading (cookie encryption is one-way). No Portable build in this beta.
+
 ## 0.1.0-alpha.8 — 2026-09-13
 
 - Fix background-tab mute without activation; add an independent monochrome all-window master mute.

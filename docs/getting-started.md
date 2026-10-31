@@ -1,8 +1,8 @@
 # Getting started
 
-The current public release is `0.1.0-alpha.6` for Windows x64. Download only from [official Releases](https://github.com/rimedag/wavebreak/releases), read that release's known issues and EULA, and choose the package matching your OS and architecture.
+The current public release is `0.2.0-beta.1` for macOS 12+ (Apple Silicon and Intel) and Windows x64. Download only from [official Releases](https://github.com/rimedag/wavebreak/releases), read that release's known issues and EULA, and choose the package matching your OS.
 
-For Windows, the installer sets up the application; the portable launcher runs without installation. Both use the normal local application-data location for settings. Initial alpha packages are unsigned. Do not disable OS security protections in response to a warning.
+On macOS, open the DMG and drag Wavebreak to Applications; the app is signed and notarized by Apple. On Windows, the installer sets up the application and the ZIP runs without installation; both use the normal local application-data location for settings. Windows packages are not code-signed yet. Do not disable OS security protections in response to a warning.
 
 Open a new tab and type a website address or search. Choose FULL, CLEAR, ASCII or DEEP in the toolbar; no refresh is needed. Show original page temporarily returns the author view. Protection remains a separate setting.
 

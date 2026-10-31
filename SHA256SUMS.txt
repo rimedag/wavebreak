@@ -1,2 +1,4 @@
-a202380500ab9301aa0b4e26ee47e565ada5985cbe931c5b64c931db6b57b05f  Wavebreak-Portable-0.1.0-alpha.8-x64.exe
-7e9b5f39eb09fbaf8f4e33fad713ad208ae1f72fa0f1d711807e1da282a647f0  Wavebreak-Setup-0.1.0-alpha.8-x64.exe
+f68e752eae855c0d37f06974ce708cc038454050b59ee33a28411d67726855ae  Wavebreak-0.2.0-beta.1-mac-universal.dmg
+f33e5e52989630aca4e6d7168bead314b20d97f85244982efe423e546a54e9a6  Wavebreak-0.2.0-beta.1-mac-universal.zip
+a3ec0e88165b130ee867f28822e455cf24d220289d86d260028d2090bb5cc9cb  Wavebreak-0.2.0-beta.1-win-x64.zip
+5705172916fa6692c1d3158b93c69628a26b4e94646d9813ee39ae74f7ab5de5  Wavebreak-Setup-0.2.0-beta.1-x64.exe

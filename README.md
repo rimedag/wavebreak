@@ -2,21 +2,22 @@
 
 **A quieter way to browse, think and work.**
 
-Wavebreak is a desktop browser and local workspace being developed in public from this alpha onward. It is not finished production software. Functionality, performance and integrated workspace features will evolve across alpha releases.
+Wavebreak is a desktop browser and local workspace being developed in public. It is beta software, not finished production software. Functionality, performance and integrated workspace features will evolve across beta releases.
 
 <img src="screenshots/wavebreak-mark.png" alt="Wavebreak" width="64">
 
 ![Wavebreak new tab page](screenshots/wavebreak-new-tab.png)
 
-## Public Alpha
+## Public Beta
 
-The current published alpha is **0.1.0-alpha.8**. See the [changelog](CHANGELOG.md) for what shipped in it and its known alpha limits.
+The current published release is **0.2.0-beta.1**, the first beta and the first macOS build. See the [changelog](CHANGELOG.md) and the [release notes](https://github.com/rimedag/wavebreak/releases/tag/0.2.0-beta.1) for what shipped and its known issues.
 
-Wavebreak is currently distributed as an unsigned Windows x64 alpha. Windows may show a SmartScreen warning. The source code is proprietary and is not published in this repository.
+The macOS app is signed with Developer ID and notarized by Apple. The Windows x64 build is not code-signed, so Windows may show a SmartScreen warning. The source code is proprietary and is not published in this repository.
 
 ## What ships today
 
 - Secure Electron browsing shell with isolated website views and local browser chrome.
+- Native macOS menu and shortcuts; per-site permission prompts for camera, microphone, location, notifications and clipboard reading; guarded sign-in popups.
 - Tabs, tab groups, bookmarks, history, downloads, find, zoom, mute, print and fullscreen basics.
 - Memory Saver with **Off**, **Balanced**, **Aggressive** and **Manual** modes. Balanced is the default; manual Sleep controls appear only in Manual.
 - Denser tabs, an anchored overflow dropdown and configurable site markers: None (default), Initial or Site icon.
@@ -78,23 +79,30 @@ Read the [privacy notice](PRIVACY.md).
 
 ## Downloads
 
-**[Download Wavebreak 0.1.0-alpha.8](https://github.com/rimedag/wavebreak/releases/tag/0.1.0-alpha.8)** — Windows x64:
+**[Download Wavebreak 0.2.0-beta.1](https://github.com/rimedag/wavebreak/releases/tag/0.2.0-beta.1)**
 
-- [Setup](https://github.com/rimedag/wavebreak/releases/download/0.1.0-alpha.8/Wavebreak-Setup-0.1.0-alpha.8-x64.exe) — installer (111 MiB)
-- [Portable](https://github.com/rimedag/wavebreak/releases/download/0.1.0-alpha.8/Wavebreak-Portable-0.1.0-alpha.8-x64.exe) — runs without installation (111 MiB)
+macOS 12 or later (Apple Silicon and Intel), signed and notarized:
 
-Verify your download against `SHA256SUMS.txt`, attached to the same release. These builds are unsigned, so Windows may show a SmartScreen warning on first run. Do not disable OS security protections in response to a warning.
+- [DMG](https://github.com/rimedag/wavebreak/releases/download/0.2.0-beta.1/Wavebreak-0.2.0-beta.1-mac-universal.dmg) — open and drag Wavebreak to Applications (226 MiB)
+- [ZIP](https://github.com/rimedag/wavebreak/releases/download/0.2.0-beta.1/Wavebreak-0.2.0-beta.1-mac-universal.zip) — the same app as a ZIP (226 MiB)
 
-Close all Wavebreak processes before upgrading or switching builds. Setup and Portable share the normal per-user profile; Portable is not a separate privacy profile. Alpha.8 prepares a one-time rollback copy before using an existing production profile. Markdown files stay in their chosen folders. Read the release notes for rollback and acceptance limits.
+Windows 10/11 x64, not code-signed:
 
-Later builds are attached to [GitHub Releases](https://github.com/rimedag/wavebreak/releases) as they ship. Only download Wavebreak from an official release. The repository ZIP is documentation, not the application.
+- [Setup](https://github.com/rimedag/wavebreak/releases/download/0.2.0-beta.1/Wavebreak-Setup-0.2.0-beta.1-x64.exe) — installer (111 MiB)
+- [ZIP](https://github.com/rimedag/wavebreak/releases/download/0.2.0-beta.1/Wavebreak-0.2.0-beta.1-win-x64.zip) — unzip and run `wavebreak.exe` (153 MiB)
+
+Verify your download against `SHA256SUMS.txt`, attached to the same release. Windows may show "Windows protected your PC" on first run (More info → Run anyway). Do not disable OS security protections in response to a warning.
+
+Windows users upgrading from an alpha: close all Wavebreak processes and copy `%APPDATA%\Wavebreak` somewhere safe first. The beta turns on cookie encryption, which an older alpha cannot read back. The beta.1 Windows build has not yet been confirmed on Windows; keep alpha.8 if you depend on it. Markdown files stay in their chosen folders. Read the release notes before upgrading.
+
+Earlier alphas and later builds are on [GitHub Releases](https://github.com/rimedag/wavebreak/releases). Only download Wavebreak from an official release. The repository ZIP is documentation, not the application.
 
 ## Platforms
 
 | Platform | Status |
 | --- | --- |
-| Windows x64 | Public alpha available. |
-| macOS | Planned; no public build yet. |
+| macOS 12+ (Apple Silicon and Intel) | Public beta available, notarized. |
+| Windows x64 | Public beta available, not code-signed. |
 | Linux | Planned; no public build yet. |
 | Android | Planned; future mobile build. |
 | iPadOS / iOS | Planned; future mobile build. |
@@ -105,7 +113,7 @@ Wavebreak's roadmap is organized by themes, not promised dates. See [ROADMAP.md]
 
 ## Feedback
 
-Use Issues for reproducible bugs and feature requests. Use Discussions for ideas, questions and alpha feedback.
+Use Issues for reproducible bugs and feature requests. Use Discussions for ideas, questions and beta feedback.
 
 Do not post passwords, cookies, browsing history, private notes, private URLs or vulnerability details publicly. Report security issues through the private channel described in [SECURITY.md](SECURITY.md).
 
